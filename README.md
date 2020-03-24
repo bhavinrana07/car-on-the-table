@@ -40,7 +40,8 @@ allowed.
 
 
 ## Explaining mobile
-![UI output](screens/mobile-view.gif)
+
+<img src="screens/mobile-view.gif" width="275px">
 
 
 ## API Endpoints
