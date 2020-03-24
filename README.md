@@ -12,6 +12,9 @@ allowed.
 
 - drop the project in your localhost folder/ docker conainer and access the project with url.
 
+## Home Screen
+![UI output](screens/home-screen.png)
+
 ## Technology
 - PHP Symfony Open source Framework
 - Symfony FOSUserBundle
@@ -29,17 +32,16 @@ allowed.
 
 
 ### Preview
-## Explaining one
+## Screencast one
 ![UI output](screens/01.gif)
 
-## Explaining two
+## Screencast two
 ![UI output](screens/02.gif)
 
-## Explaining three
+## Screencast three
 ![UI output](screens/03.gif)
 
-
-## Explaining mobile
+## Screencast mobile
 
 <img src="screens/mobile-view.gif" width="275px">
 
