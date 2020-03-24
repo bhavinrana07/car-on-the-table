@@ -170,7 +170,7 @@ class ToyCarController extends FOSRestController
      * @param [type] $f
      * @return void
      */
-    function validatePosition($x, $y, $f)
+    public function validatePosition($x, $y, $f)
     {
         $tableCloth = $this->getTableCloth();
         if (!in_array($x . $y, $tableCloth)) {
