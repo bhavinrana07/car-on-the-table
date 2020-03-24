@@ -1,0 +1,35 @@
+
+.table-cloth,.contoller{
+    min-width: 468px;
+}
+.table-cloth table td {
+    padding: 0;
+    border: 1px solid #cac6c6;
+}
+
+.f-N{
+    transform: rotateZ(90deg);
+}
+.f-E{
+    transform: rotateZ(180deg);
+}
+.f-S{
+    transform: rotateZ(270deg);
+}
+.f-W{
+    transform: rotateZ(360deg);
+}
+.car-box .car-img{
+    visibility: hidden;
+
+}
+
+.digits{
+    color: #757373;
+}
+.alert{
+    display:none;
+}
+h2 img{
+    margin-top: -18px;
+}
