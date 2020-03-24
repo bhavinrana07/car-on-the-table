@@ -46,66 +46,69 @@ allowed.
 
 ## API Endpoints
 ### GET
-##### get accounts
+##### Place The Car
 ```yaml
-'GET' accounts-with-txt-file/public/api/accounts
-```
-##### response
-```yaml
-[
-    {
-        "name": "user1.txt",
-        "balance": "9900"
-    },
-    {
-        "name": "user2.txt",
-        "balance": "10100"
-    }
-]
-```
-##### reset accounts
-```yaml
-'GET' accounts-with-txt-file/public/api/resetAccounts
-```
-##### response
-```yaml
-[
-    {
-        "name": "user1.txt",
-        "balance": "10000"
-    },
-    {
-        "name": "user2.txt",
-        "balance": "10000"
-    }
-]
-```
-### POST
-##### amount transfer
-```yaml
-'POST' accounts-with-txt-file/public/api/transfer
+'POST' the-car-on-the-table/public/api/place
 ```
 
 ##### request
 ```yaml
 {
-    "transfer_from": "1",
-    "transfer_to": "2",
-    "amount": "500"
+    "x": "0",
+    "y": "1",
+    "f": "N"
 }
 ```
 ##### response
 ```yaml
-[
-    {
-        "name": "user1.txt",
-        "balance": "9500"
-    },
-    {
-        "name": "user2.txt",
-        "balance": "10500"
-    }
-]
+{
+    "x": "0",
+    "y": "1",
+    "f": "N"
+}
+```
+##### Move Car
+```yaml
+'POST' the-car-on-the-table/public/api/move
+```
+##### Request
+```yaml
+{
+    "x": "1",
+    "y": "1",
+    "f": "W"
+}
+```
+##### response
+```yaml
+{
+    "x": "1",
+    "y": 0,
+    "f": "W"
+}
+```
+### POST
+##### Take a Turn
+```yaml
+'POST' the-car-on-the-table/public/api/turn
+```
+
+##### request
+```yaml
+{
+    "x": "0",
+    "y": "3",
+    "f": "N",
+    "t":"L"
+}
+```
+##### response
+```yaml
+{
+    "x": 0,
+    "y": 3,
+    "f": "W"
+}
 ```
 
 
